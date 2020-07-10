@@ -45,7 +45,42 @@ namespace TicTacToe.classes
                 and make sure that the game continues while there are unmarked spots on the board. 
             Use any and all pre-existing methods in this program to help construct the method logic. 
              */
-		}
+
+			PlayerOne.IsTurn = true;
+			Winner = new Player();
+			int turnCounter = 0;
+
+			while (true)
+			{
+				Board.DisplayBoard();
+				NextPlayer().TakeTurn(Board);
+				turnCounter++;
+
+				if (CheckForWinner(Board))
+				{
+					Winner = PlayerOne;
+					break;
+				}
+				else if (turnCounter == 9)
+                {
+					break;
+                }
+				Console.Clear();
+				SwitchPlayer();
+				Board.DisplayBoard();
+
+				NextPlayer().TakeTurn(Board);
+				turnCounter++;
+				if (CheckForWinner(Board))
+                {
+					Winner = PlayerTwo;
+					break;
+                }
+				SwitchPlayer();
+				Console.Clear();
+			}
+
+        }
 
 
 		/// <summary>
@@ -81,7 +116,8 @@ namespace TicTacToe.classes
 				string c = Board.GameBoard[p3.Row, p3.Column];
 
 				// TODO:  Determine a winner has been reached. 
-				// return true if a winner has been reached. 
+				// return true if a winner has been reached. '
+
 
 			}
 
