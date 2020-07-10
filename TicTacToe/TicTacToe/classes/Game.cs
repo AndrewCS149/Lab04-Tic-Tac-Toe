@@ -117,8 +117,8 @@ namespace TicTacToe.classes
 
                 // TODO:  Determine a winner has been reached. 
                 // return true if a winner has been reached. '
-                if (a == 'X' && b == 'X' && c == 'X' ||
-                    a == 'O' && b == 'O' && c == 'O')
+                if (a == b && b == c)
+                    
                 {
                     return true;
                 }
