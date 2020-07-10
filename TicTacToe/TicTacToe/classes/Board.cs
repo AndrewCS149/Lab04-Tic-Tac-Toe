@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TicTacToe.classes
 {
-    class Board
+    public class Board
     {
 		
 		// Tic Tac Toe Gameboard states

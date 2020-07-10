@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TicTacToe.classes
 {
-    class Player
+    public class Player
     {
 		// name of player
 		public string Name { get; set; }

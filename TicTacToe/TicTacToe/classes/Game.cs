@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TicTacToe.classes
 {
-    class Game
+    public class Game
     {
         public Player PlayerOne { get; set; }
         public Player PlayerTwo { get; set; }
@@ -45,9 +45,8 @@ namespace TicTacToe.classes
                     break;
                 }
                 else if (turnCounter == 9)
-                {
                     break;
-                }
+
                 //this clears the terminal out so that there isn't excess data clutter
                 Console.Clear();
                 SwitchPlayer();
@@ -63,7 +62,9 @@ namespace TicTacToe.classes
                 }
                 SwitchPlayer();
                 Console.Clear();
-            } 
+            }
+
+            Board.DisplayBoard();
             return Winner;
         }
 
@@ -98,9 +99,6 @@ namespace TicTacToe.classes
                 string a = Board.GameBoard[p1.Row, p1.Column];
                 string b = Board.GameBoard[p2.Row, p2.Column];
                 string c = Board.GameBoard[p3.Row, p3.Column];
-
-                // TODO:  Determine a winner has been reached. 
-                // return true if a winner has been reached. 
 
                 //this logic checks to see if a win condition is found
                 if (a == b && b == c)
