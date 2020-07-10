@@ -6,7 +6,9 @@ namespace TicTacToe
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Welcome to the best game in the world, Tic Tac Toe!!!");
+            Console.WriteLine("Please enter the name of Player 1");
+            string player1name = 
         }
 
         static void StartGame()
