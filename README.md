@@ -42,6 +42,7 @@ Win:
 
 ---
 ## Change Log
+1.5: Tests written
 1.4: App has full functionality
 1.3: TAs troubleshot technical problems with app execution - 9 July 2020
 1.2: README completed - 9 July 2020
