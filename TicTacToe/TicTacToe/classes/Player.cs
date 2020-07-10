@@ -6,18 +6,15 @@ namespace TicTacToe.classes
 {
     class Player
     {
+		// name of player
 		public string Name { get; set; }
-		/// <summary>
-		/// P1 is X and P2 will be O
-		/// </summary>
+		// P1 is X and P2 will be O
 		public string Marker { get; set; }
 
-		/// <summary>
-		/// Flag to determine if it is the user's turn
-		/// </summary>
+		// Flag to determine if it is the user's turn
 		public bool IsTurn { get; set; }
 
-
+		/// Get position of board
 		public Position GetPosition(Board board)
 		{
 			Position desiredCoordinate = null;
@@ -31,7 +28,9 @@ namespace TicTacToe.classes
 
 		}
 
-
+		/// <summary>	  
+		///Position for numbers 
+		/// </summary>
 		public static Position PositionForNumber(int position)
 		{
 			switch (position)
@@ -50,20 +49,22 @@ namespace TicTacToe.classes
 			}
 		}
 
-
+		/// <summary>
+		/// Take turn of players
+		/// </summary>
 		public void TakeTurn(Board board)
 		{
             IsTurn = true;
-
             Console.WriteLine($"{Name} it is your turn");
-
             Position position = GetPosition(board);
 
+			// if player chooses position that has already been chosen
             while (!Int32.TryParse(board.GameBoard[position.Row, position.Column], out int _))
             {
 				Console.WriteLine("This space is already occupied");
                 position = GetPosition(board);
             }
+
 			board.GameBoard[position.Row, position.Column] = Marker;
 		}
 	}

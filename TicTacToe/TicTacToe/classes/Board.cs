@@ -6,9 +6,9 @@ namespace TicTacToe.classes
 {
     class Board
     {
-		/// <summary>
-		/// Tic Tac Toe Gameboard states
-		/// </summary>
+		
+		// Tic Tac Toe Gameboard states
+		
 		public string[,] GameBoard = new string[,]
 		{
 			{"1", "2", "3"},
@@ -16,12 +16,12 @@ namespace TicTacToe.classes
 			{"7", "8", "9"},
 		};
 
-
-		public void DisplayBoard()
+        /// <summary>
+        ///  Display board this game
+        /// </summary>
+        public void DisplayBoard()
 		{
-
-			//TODO: Output the board to the console
-
+			// print all board elements
 			for(int i = 0; i < 3; i++)
             {
 				for(int k = 0; k < 3; k++)
