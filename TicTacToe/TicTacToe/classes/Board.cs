@@ -22,13 +22,13 @@ namespace TicTacToe.classes
 
 			//TODO: Output the board to the console
 
-			for(int i = 0; i < GameBoard.Length; i++)
+			for(int i = 0; i < 3; i++)
             {
-				for(int k = 0; k < GameBoard.Length; k++)
+				for(int k = 0; k < 3; k++)
                 {
-                    //Console.WriteLine(GameBoard[i][k]);
-                    Console.WriteLine(i);
+                    Console.Write(GameBoard[i, k]);
                 }
+                Console.WriteLine(); 
             }
 		}
 	}

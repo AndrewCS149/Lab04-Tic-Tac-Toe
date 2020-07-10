@@ -78,7 +78,9 @@ namespace TicTacToe.classes
                 }
                 SwitchPlayer();
                 Console.Clear();
-            }
+            } 
+            
+            return Winner;
 
         }
 
