@@ -21,10 +21,11 @@
 ##### Select the Program.cs document
 
 ### Application WhiteBoard
-![App Image 1](../assets/whiteboard.png)
+![App Image 1](./assets/Lab04-TicTacToe.png)
 
 
 #### Change Log
-###### 1.3: TAs troubleshot technical problems with app execution - 8 July 2020
-###### 1.2: README completed - 8 July 2020
-###### 1.1: App first created - 8 July 2020
+###### 1.4: App has full functionality
+###### 1.3: TAs troubleshot technical problems with app execution - 9 July 2020
+###### 1.2: README completed - 9 July 2020
+###### 1.1: App first created - 9 July 2020
