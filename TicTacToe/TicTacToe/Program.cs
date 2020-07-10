@@ -3,7 +3,7 @@ using TicTacToe.classes;
 
 namespace TicTacToe
 {
-    class Program
+    public class Program
     {/// <summary>
     /// this method calls the StartGame method, which houses all other methods called on program.cs
     /// </summary>
@@ -15,7 +15,7 @@ namespace TicTacToe
         /// <summary>
         /// this method starts the game and carries all subsequent method calls within it
         /// </summary>
-        static void StartGame()
+        public static void StartGame()
         {
             Console.WriteLine("Welcome to the best game in the world, Tic Tac Toe!!!");
 
@@ -34,7 +34,6 @@ namespace TicTacToe
             player2.Marker = "O";
 
             // initialize game/board
-            Board board = new Board();
             Game game = new Game(player1, player2);
 
             // play game
